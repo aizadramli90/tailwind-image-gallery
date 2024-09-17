@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-center bg-cyan-50 min-h-screen">
+      <div
+        class="bg-white flex flex-col rounded-3xl shadow-2xl p-6 m-3 space-y-5 md:p-40"
+      >
+        <nav>
+          <ul
+            class="flex flex-col justify-center items-center gap-5 md:flex md:flex-row md:justify-end"
+          >
+            <li><a href="">Vector</a></li>
+            <li><a href="">Illustrations</a></li>
+            <li><a href="">Images</a></li>
+            <li><a href="">Icons</a></li>
+          </ul>
+        </nav>
+        <div class="flex flex-col gap-6 md:flex-row md:justify-between">
+          <div class="flex flex-row justify-between border-b">
+            <input
+              type="text"
+              placeholder="Search"
+              class="focus:outline-none ml-6"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search text-gray-300"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <button
+            class="py-3 px-14 text-lg font-normal shadow-2xl duration-200 border rounded-md text-white border-black bg-black hover:bg-white hover:text-black"
+          >
+            Upload
+          </button>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          <div class="relative group">
+            <img src="./images/image1.jpg" alt="" class="w-72" />
+            <div
+              class="bottom-0 absolute left-0 right-0 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 group-hover:text-white duration-500 p-2 px-4"
+            >
+              <div class="flex justify-between w-full items-center">
+                <div>
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 Shares</p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="relative group">
+            <img src="./images/image2.jpg" alt="" class="w-72" />
+            <div
+              class="bottom-0 absolute left-0 right-0 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 group-hover:text-white duration-500 p-2 px-4"
+            >
+              <div class="flex justify-between w-full items-center">
+                <div>
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 Shares</p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="relative group">
+            <img src="./images/image3.jpg" alt="" class="w-72" />
+            <div
+              class="bottom-0 absolute left-0 right-0 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 group-hover:text-white duration-500 p-2 px-4"
+            >
+              <div class="flex justify-between w-full items-center">
+                <div>
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 Shares</p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="relative group">
+            <img src="./images/image4.jpg" alt="" class="w-72" />
+            <div
+              class="bottom-0 absolute left-0 right-0 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 group-hover:text-white duration-500 p-2 px-4"
+            >
+              <div class="flex justify-between w-full items-center">
+                <div>
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 Shares</p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="relative group">
+            <img src="./images/image5.jpg" alt="" class="w-72" />
+            <div
+              class="bottom-0 absolute left-0 right-0 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 group-hover:text-white duration-500 p-2 px-4"
+            >
+              <div class="flex justify-between w-full items-center">
+                <div>
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 Shares</p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="relative group">
+            <img src="./images/image6.jpg" alt="" class="w-72" />
+            <div
+              class="bottom-0 absolute left-0 right-0 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 group-hover:text-white duration-500 p-2 px-4"
+            >
+              <div class="flex justify-between w-full items-center">
+                <div>
+                  <p class="text-sm">Abstract Painting</p>
+                  <p class="text-xs">245 likes - 35 Shares</p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
